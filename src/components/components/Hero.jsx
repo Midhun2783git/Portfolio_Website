@@ -22,7 +22,7 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
            I am a final-year undergraduate student passionate about AI, robotics, and innovative technology.
            I have experience working on projects involving simulations, interactive websites, and machine learning concepts.
-           I like solving challenges and exploring new technologies. With a gocus on learning and practice
+           I like solving challenges and exploring new technologies. With a focus on learning and practice
            I aim to contribute to advancements in the tech field.
           </p>
         </div>
