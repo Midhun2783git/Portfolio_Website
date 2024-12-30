@@ -23,7 +23,7 @@ const Hero = () => {
            I am a final-year undergraduate student passionate about AI, robotics, and innovative technology.
            I have experience working on projects involving simulations, interactive websites, and machine learning concepts.
            I like solving challenges and exploring new technologies. With a focus on learning and practice
-           I aim to contribute to the advancements in the tech field.
+           I aim to contribute to advancements in the tech field.
           </p>
         </div>
       </div>
