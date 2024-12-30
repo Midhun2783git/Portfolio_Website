@@ -20,10 +20,10 @@ const Hero = () => {
         <div>
           <h1 className={`${styles.heroHeadText}text-white`}>Hi, I am <span className="text-[#915eff]">Midhun</span></h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-           I am a final-year undergraduate student passionate about AI, robotics, and innovative technology.
-           I have experience working on projects involving simulations, interactive websites, and machine learning concepts.
-           I like solving challenges and exploring new technologies. With a focus on learning and practice
-           I aim to contribute to advancements in the tech field.
+          I am passionate about AI, robotics, and innovative technology,
+          with experience in simulations, interactive websites,
+          and machine learning. I aim to create impactful solutions
+          and contribute to advancements shaping the future.
           </p>
         </div>
       </div>
