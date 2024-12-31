@@ -98,6 +98,7 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../../hoc";
 import { slideIn } from "../../utils/motion";
 
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -116,24 +117,39 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    try {
-      await emailjs.send(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
-        form,
-        'YOUR_USER_ID'
-      );
-      setLoading(false);
-      alert('Message sent successfully!');
-      setForm({
-        name: '',
-        email: '',
-        message: '',
-      });
-    } catch (error) {
-      setLoading(false);
-      alert('Failed to send the message, please try again.');
-    }
+    //ftZDVAwWAl-90ys2d
+    //template_eik0414
+    //service_r0oq53f
+    emailjs.send(
+      'service_r0oq53f',
+      'template_eik0414',
+      {
+        from_name: form.name,
+        to_name: 'Midhun',
+        from_email: form.email,
+        to_email: 'contact@midhun-saminathan',
+        message: form.message,
+      },
+      'ftZDVAwWAl-90ys2d'
+    )
+    .then(
+      () => {
+        setLoading(false);
+        alert("Thank you. I will get back to you as soon as possible.");
+
+        setForm({
+          name: "",
+          email: "",
+          message: "",
+        });
+      },
+      (error) => {
+        setLoading(false);
+        console.error(error);
+
+        alert("Something went wrong. Please try again.");
+      }
+    );
   };
 
   return (
