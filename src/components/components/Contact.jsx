@@ -138,9 +138,7 @@ const Contact = () => {
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
-      <EarthContainer className="flex-1 h-[350px] md:h-[550px]">
-        <EarthCanvas />
-      </EarthContainer>
+
       <motion.div
         variants={slideIn('left', "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
@@ -193,6 +191,9 @@ const Contact = () => {
           </button>
         </form>
       </motion.div>
+      <EarthContainer className="flex-1 h-[100px] md:h-[550px]">
+        <EarthCanvas />
+      </EarthContainer>      
     </div>
   );
 };
