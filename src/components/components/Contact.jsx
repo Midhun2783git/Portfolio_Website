@@ -92,6 +92,7 @@ import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
+import { resume, CV } from '../../assets/assets';
 
 import { styles } from "../../styles";
 import { EarthCanvas } from "./canvas";
@@ -160,7 +161,15 @@ const Contact = () => {
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
         <p className={styles.sectionSubText}>Get In Touch</p>
-        <h3 className={styles.sectionHeadText}>Contact</h3>
+        <div className="flex items-center">
+          <h3 className={styles.sectionHeadText}>Contact</h3>
+          <button className="ml-4">
+            <a href={CV} target="_blank" >
+              <img src={resume} alt="Resume" className="ml-7 w-50 h-50" />
+            </a>
+          </button>
+        </div>
+        {/* <h3 className={styles.sectionHeadText}>Contact</h3> */}
 
         <form
           ref={formRef}
