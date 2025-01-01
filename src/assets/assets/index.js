@@ -31,6 +31,12 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import brainwave from "./Brainwave.png";
+import rpi from "./raspberry-pi.png";
+import tic from "./tic.jpg";
+import studdorm from "./stud-dorm.png";
+import seaexp from "./sea-exp.jpg";
+import mongm from "./mon_game.jpg";
 
 export {
   logo,
@@ -63,4 +69,10 @@ export {
   carrent,
   jobit,
   tripguide,
+  brainwave,
+  rpi,
+  tic,
+  studdorm,
+  seaexp,
+  mongm,
 };

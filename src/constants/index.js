@@ -22,7 +22,13 @@ shopify,
 carrent,
 jobit,
 tripguide,
+brainwave,
+tic,
+rpi,
 threejs,
+studdorm,
+seaexp,
+mongm,
 } from "../assets/assets";
 
 export const navLinks = [
@@ -198,7 +204,7 @@ const testimonials = [
 
 const projects = [
 {
-    name: "Car Rent",
+    name: "Brainwave",
     description:
     "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
@@ -215,11 +221,11 @@ const projects = [
         color: "pink-text-gradient",
     },
     ],
-    image: carrent,
+    image: brainwave,
     source_code_link: "https://github.com/",
 },
 {
-    name: "Job IT",
+    name: "Mastermind",
     description:
     "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
@@ -236,11 +242,11 @@ const projects = [
         color: "pink-text-gradient",
     },
     ],
-    image: jobit,
+    image: rpi,
     source_code_link: "https://github.com/",
 },
 {
-    name: "Trip Guide",
+    name: "Tic-Tac-Toe",
     description:
     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
@@ -257,7 +263,70 @@ const projects = [
         color: "pink-text-gradient",
     },
     ],
-    image: tripguide,
+    image: tic,
+    source_code_link: "https://github.com/",
+},
+{
+    name: "Student Dorm",
+    description:
+    "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+    {
+        name: "nextjs",
+        color: "blue-text-gradient",
+    },
+    {
+        name: "supabase",
+        color: "green-text-gradient",
+    },
+    {
+        name: "css",
+        color: "pink-text-gradient",
+    },
+    ],
+    image: studdorm,
+    source_code_link: "https://github.com/",
+},
+{
+    name: "Underwater Exploration",
+    description:
+    "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+    {
+        name: "nextjs",
+        color: "blue-text-gradient",
+    },
+    {
+        name: "supabase",
+        color: "green-text-gradient",
+    },
+    {
+        name: "css",
+        color: "pink-text-gradient",
+    },
+    ],
+    image: seaexp,
+    source_code_link: "https://github.com/",
+},
+{
+    name: "Monster Game",
+    description:
+    "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+    {
+        name: "nextjs",
+        color: "blue-text-gradient",
+    },
+    {
+        name: "supabase",
+        color: "green-text-gradient",
+    },
+    {
+        name: "css",
+        color: "pink-text-gradient",
+    },
+    ],
+    image: mongm,
     source_code_link: "https://github.com/",
 },
 ];
