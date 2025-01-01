@@ -20,6 +20,7 @@ meta,
 starbucks,
 tesla,
 shopify,
+// blender,
 carrent,
 jobit,
 tripguide,
@@ -49,19 +50,19 @@ export const navLinks = [
 
 const services = [
 {
-    title: "Web Developer",
+    title: "Web Development",
     icon: web,
 },
 {
-    title: "React Native Developer",
+    title: "App Development",
     icon: mobile,
 },
 {
-    title: "Backend Developer",
+    title: "UI/UX Designing",
     icon: backend,
 },
 {
-    title: "Content Creator",
+    title: "Game Development",
     icon: creator,
 },
 ];

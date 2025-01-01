@@ -39,14 +39,14 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview</h2>
+        <h2 className={styles.sectionHeadText}>About me</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm an aspiring technologist with a strong passion for AI, robotics, and innovative solutions.
+        I'm an aspiring technologist with a strong passion for AI, robotics,web development and innovative solutions.
         My academic and project experiences have allowed me to work on a variety of challenges,
         from developing simulations to creating interactive applications and exploring machine learning concepts.
         I am skilled in tools such as Python, Blender, and Unreal Engine, which I use to bring my ideas to life.
