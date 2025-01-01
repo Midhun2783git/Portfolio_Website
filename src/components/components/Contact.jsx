@@ -216,9 +216,12 @@ const Contact = () => {
           </button>
         </form>
       </motion.div>
-      <EarthContainer className="flex-1 h-[100px] md:h-[550px]">
+
+    <motion.div
+      variants={slideIn('right', "tween", 0.2, 1)}
+      className="ml-20 flex-1 h-[100px] md:h-[450px]">
         <EarthCanvas />
-      </EarthContainer>      
+    </motion.div>     
     </div>
   );
 };

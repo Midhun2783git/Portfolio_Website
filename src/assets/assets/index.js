@@ -9,6 +9,8 @@ import resume from "./resume.png";
 import CV from "./Midhun-Saminathan-CV.pdf";
 import close from "./close.svg";
 
+import python from "./tech/python.png";
+import java from "./tech/java.png";
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -22,11 +24,14 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import blender from "./tech/blender.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import diez from "./company/diez.jpg";
+import stuDorm from "./company/stuDorm.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -49,6 +54,8 @@ export {
   close,
   resume,
   CV,
+  python,
+  java,
   css,
   docker,
   figma,
@@ -59,6 +66,7 @@ export {
   nodejs,
   reactjs,
   redux,
+  blender,
   tailwind,
   typescript,
   threejs,
@@ -66,6 +74,8 @@ export {
   shopify,
   starbucks,
   tesla,
+  diez,
+  stuDorm,
   carrent,
   jobit,
   tripguide,
