@@ -1,3 +1,4 @@
+import { h } from "maath/dist/misc-19a3ec46.esm";
 import {
 mobile,
 backend,
@@ -206,128 +207,104 @@ const projects = [
 {
     name: "Brainwave",
     description:
-    "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    "Brainwave facilitates real-time collaboration via chat, video calls, and file sharing, with integrated tools for project management, focusing on accessibility and user-friendly design.",
     tags: [
     {
-        name: "react",
+        name: "typescript",
         color: "blue-text-gradient",
     },
     {
-        name: "mongodb",
+        name: "javascript",
         color: "green-text-gradient",
     },
     {
-        name: "tailwind",
+        name: "CSS",
         color: "pink-text-gradient",
     },
     ],
     image: brainwave,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Midhun2783git/brain-wave",
 },
 {
     name: "Mastermind",
     description:
-    "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    "The Mastermind Game implements the classic game in C, utilizing a Raspberry Pi for input/output operations and game logic functions.",
     tags: [
     {
-        name: "react",
+        name: "C",
         color: "blue-text-gradient",
     },
     {
-        name: "restapi",
+        name: "assembly",
         color: "green-text-gradient",
     },
     {
-        name: "scss",
+        name: "Raspberry-Pi",
         color: "pink-text-gradient",
     },
     ],
     image: rpi,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Midhun2783git/Mastermind_Game",
 },
 {
     name: "Tic-Tac-Toe",
     description:
-    "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    "The Tic_Tac_Toe game implements the a game in Java, featuring game logic, user interface, and AI agents for single-player mode.",
     tags: [
     {
-        name: "nextjs",
+        name: "java",
         color: "blue-text-gradient",
-    },
-    {
-        name: "supabase",
-        color: "green-text-gradient",
-    },
-    {
-        name: "css",
-        color: "pink-text-gradient",
     },
     ],
     image: tic,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Midhun2783git/Tic_Tac_Toe",
 },
 {
     name: "Student Dorm",
     description:
-    "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    "The Student Dorm website focuses on developing a management platform for student dormitories, handling room assignments, facilities, and other important information for students.",
     tags: [
     {
-        name: "nextjs",
+        name: "HTML",
         color: "blue-text-gradient",
     },
     {
-        name: "supabase",
+        name: "CSS",
         color: "green-text-gradient",
     },
     {
-        name: "css",
+        name: "javascript",
         color: "pink-text-gradient",
     },
     ],
     image: studdorm,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Midhun2783git/Stud_Dorm_website",
 },
 {
     name: "Underwater Exploration",
     description:
-    "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    "The Underwater Exploration features a project utilizing PDDL (Planning Domain Definition Language) for automated planning and scheduling in sea exploration initiatives.",
     tags: [
     {
-        name: "nextjs",
+        name: "PDDL",
         color: "blue-text-gradient",
-    },
-    {
-        name: "supabase",
-        color: "green-text-gradient",
-    },
-    {
-        name: "css",
-        color: "pink-text-gradient",
     },
     ],
     image: seaexp,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Midhun2783git/Sea_Exploration",
 },
 {
     name: "Monster Game",
     description:
-    "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    "The Monster game is a project for developing a game using Prolog. Prolog is a logic programming language associated with artificial intelligence and computational linguistics.",
     tags: [
     {
-        name: "nextjs",
+        name: "prolog",
         color: "blue-text-gradient",
     },
-    {
-        name: "supabase",
-        color: "green-text-gradient",
-    },
-    {
-        name: "css",
-        color: "pink-text-gradient",
-    },
     ],
-    image: mongm,
-    source_code_link: "https://github.com/",
+    image: mongm, 
+    source_code_link: "https://github.com/Midhun2783git/Monster_game-",
 },
 ];
 
