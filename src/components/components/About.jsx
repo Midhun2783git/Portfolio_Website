@@ -10,7 +10,7 @@ const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
+      className='w-full blue-red-gradient p-[1px] rounded-[20px] shadow-card'
     >
       <div
         options={{
@@ -46,7 +46,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm an aspiring technologist with a strong passion for AI, robotics,web development and innovative solutions.
+        I'm an aspiring computer science student with a strong passion for AI, robotics,web development and innovative solutions.
         My academic and project experiences have allowed me to work on a variety of challenges,
         from developing simulations to creating interactive applications and exploring machine learning concepts.
         I am skilled in tools such as Python, Blender, and Unreal Engine, which I use to bring my ideas to life.
