@@ -28,7 +28,7 @@ const Tech = () => {
         <div className="flex flex-col items-center mt-4">
           {technologies.map((technology) => (
             <div key={technology.name} className="flex items-center space-x-2 my-2">
-              <img src={technology.icon} alt={technology.name} className="w-10 h-10" /> {/* Adjust size as necessary */}
+              <img src={technology.icon} alt={technology.name} className="w-10 h-10" />
               <span>{technology.name}</span>
             </div>
           ))}
