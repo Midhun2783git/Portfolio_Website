@@ -117,10 +117,6 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-
-    //ftZDVAwWAl-90ys2d
-    //template_eik0414
-    //service_r0oq53f
     emailjs.send(
       'service_r0oq53f',
       'template_eik0414',
