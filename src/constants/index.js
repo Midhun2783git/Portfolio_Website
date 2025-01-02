@@ -96,10 +96,10 @@ icon: java,
     name: "TypeScript",
     icon: typescript,
 },
-// {
-//     name: "React JS",
-//     icon: reactjs,
-// },
+{
+    name: "React JS",
+    icon: reactjs,
+},
 // {
 //     name: "Redux Toolkit",
 //     icon: redux,
@@ -108,30 +108,30 @@ icon: java,
 //     name: "Tailwind CSS",
 //     icon: tailwind,
 // },
-// {
-//     name: "Node JS",
-//     icon: nodejs,
-// },
-// {
-//     name: "Blender",
-//     icon: blender,
-// },
-// {
-//     name: "Three JS",
-//     icon: threejs,
-// },
-// {
-//     name: "git",
-//     icon: git,
-// },
-// {
-//     name: "figma",
-//     icon: figma,
-// },
-// {
-//     name: "docker",
-//     icon: docker,
-// },
+{
+    name: "Node JS",
+    icon: nodejs,
+},
+{
+    name: "Blender",
+    icon: blender,
+},
+{
+    name: "Three JS",
+    icon: threejs,
+},
+{
+    name: "git",
+    icon: git,
+},
+{
+    name: "figma",
+    icon: figma,
+},
+{
+    name: "docker",
+    icon: docker,
+},
 ];
 
 const experiences = [
