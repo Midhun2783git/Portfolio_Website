@@ -8,6 +8,7 @@ import menu from "./menu.svg";
 import resume from "./resume.png";
 import CV from "./Midhun-Saminathan-CV.pdf";
 import close from "./close.svg";
+import gif from "./gif.gif";
 
 import python from "./tech/python.png";
 import java from "./tech/java.png";
@@ -59,6 +60,7 @@ export {
   css,
   docker,
   figma,
+  gif,
   git,
   html,
   javascript,
