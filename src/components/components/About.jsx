@@ -5,6 +5,7 @@ import { styles } from '../../styles';
 import { services } from '../../constants';
 import { fadeIn, textVariant } from '../../utils/motion';
 import { SectionWrapper } from '../../hoc';
+import { brainwave } from '../../assets/assets';
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
@@ -36,39 +37,95 @@ const ServiceCard = ({ index, title, icon }) => (
 
 const About = () => {
   return (
-    <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>About me</h2>
-      </motion.div>
+    // <>
+    //   <motion.div variants={textVariant()}>
+    //     <p className={styles.sectionSubText}>Introduction</p>
+    //     <h2 className={styles.sectionHeadText}>About me</h2>
+    //   </motion.div>
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
-      >
-          Hi! I'm Midhun Saminathan, a passionate learner and innovator with a
-          strong interest in AI, robotics, and technology-driven solutions.
-          My academic and project experiences have allowed me to explore diverse areas,
-          including simulations, behavior-based robotics, and interactive designs.
-          <br/>
-          <br/>
-          I enjoy tackling complex challenges and transforming ideas into impactful
-          outcomes, whether it’s through designing intelligent systems or developing
-          user-focused applications. With a keen eye for detail and a problem-solving
-          mindset, I strive to create solutions that not only address real-world needs
-          but also push the boundaries of innovation.
-          <br/>
-          <br/>
+    //   <motion.p
+    //     variants={fadeIn("", "", 0.1, 1)}
+    //     className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+    //   >
+    //       <p>
+    //       Hi! I'm Midhun Saminathan, a passionate learner and innovator with a
+    //       strong interest in AI, robotics, and technology-driven solutions.
+    //       My academic and project experiences have allowed me to explore diverse areas,
+    //       including simulations, behavior-based robotics, and interactive designs.
+    //       </p>
+    //       <br/>
+    //       <p>
+    //       I enjoy tackling complex challenges and transforming ideas into impactful
+    //       outcomes, whether it’s through designing intelligent systems or developing
+    //       user-focused applications. With a keen eye for detail and a problem-solving
+    //       mindset, I strive to create solutions that not only address real-world needs
+    //       but also push the boundaries of innovation.
+    //       </p>
+    //       <br/>
+    //       I am driven by curiosity and a commitment to continuous growth, eager to
+    //       contribute to projects that shape the future of technology and make a
+    //       meaningful difference.
+    //   </motion.p>
+
+    //   <div className='mt-20 flex flex-wrap gap-10'>
+    //     {services.map((service, index) => (
+    //       <ServiceCard key={service.title} index={index} {...service} />
+    //     ))}
+    //   </div>
+    // </>
+    <>
+    <div className='flex flex-col md:flex-row items-center justify-between h-[100vh]'>
+      {/* Text Container */}
+      <div className='w-full md:w-1/2 p-6'>
+        <motion.div variants={textVariant()}>
+          <p className={styles.sectionSubText}>Introduction</p>
+          <h2 className={styles.sectionHeadText}>About me</h2>
+        </motion.div>
+
+        <motion.p
+          variants={fadeIn("", "", 0.1, 1)}
+          className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        >
+          <p>
+            Hi! I'm Midhun Saminathan, a passionate learner and innovator with a
+            strong interest in AI, robotics, and technology-driven solutions.
+            My academic and project experiences have allowed me to explore diverse areas,
+            including simulations, behavior-based robotics, and interactive designs.
+          </p>
+          <br />
+          <p>
+            I enjoy tackling complex challenges and transforming ideas into impactful
+            outcomes, whether it’s through designing intelligent systems or developing
+            user-focused applications. With a keen eye for detail and a problem-solving
+            mindset, I strive to create solutions that not only address real-world needs
+            but also push the boundaries of innovation.
+          </p>
+          <br />
           I am driven by curiosity and a commitment to continuous growth, eager to
           contribute to projects that shape the future of technology and make a
           meaningful difference.
-      </motion.p>
-
-      <div className='mt-20 flex flex-wrap gap-10'>
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
+        </motion.p>
       </div>
+
+      {/* Image Container */}
+      
+      <div className='w-full md:w-1/2 h-full'>
+        <img
+          src={brainwave} // Replace with your image variable or path
+          alt='About Me'
+          className='block hidden md:flex w-full h-full object-cover rounded-lg border-[5px] border-solid border-white'
+          style={{
+            boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.2)",
+          }}
+        />
+      </div>
+    </div>
+
+    <div className='mt-20 flex flex-wrap gap-10'>
+      {services.map((service, index) => (
+        <ServiceCard key={service.title} index={index} {...service} />
+      ))}
+    </div>
     </>
   )
 }
