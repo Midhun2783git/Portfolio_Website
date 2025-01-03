@@ -5,7 +5,6 @@ import { styles } from '../../styles';
 import { services } from '../../constants';
 import { fadeIn, textVariant } from '../../utils/motion';
 import { SectionWrapper } from '../../hoc';
-import { gif } from '../../assets/assets';
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
@@ -43,11 +42,6 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>About me</h2>
       </motion.div>
 
-      <div className="flex items-start mt-4">
-        <motion.img 
-          src= {gif} 
-          className="w-30 h-80 mt-4 mr-4" 
-        />
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
@@ -69,7 +63,6 @@ const About = () => {
           contribute to projects that shape the future of technology and make a
           meaningful difference.
       </motion.p>
-      </div>
 
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
