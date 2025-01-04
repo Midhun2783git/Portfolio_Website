@@ -104,7 +104,7 @@ const About = () => {
 
       {/* Image Container */}
       
-      <div className='w-full md:w-1/2 h-full'>
+      <div className='w-full h-full'>
         <img
           src={hello} // Replace with your image variable or path
           alt='About Me'
