@@ -116,8 +116,10 @@ const About = () => {
           }}
         />
       </div>
-    </div>
-
+    </div>  
+    <br />
+    <br />        
+    {/* Services Section */}
     <div className='mt-20 flex flex-wrap gap-10'>
       {services.map((service, index) => (
         <ServiceCard key={service.title} index={index} {...service} />
