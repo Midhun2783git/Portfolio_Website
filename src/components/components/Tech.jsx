@@ -23,8 +23,8 @@ const Tech = () => {
 
       {/* Mobile Text Display */}
       <div className='block md:hidden text-center'>
-        <p className={styles.sectionSubText}>My Projects</p>
-        <h2 className={styles.sectionHeadText}>Projects</h2>
+        <p className={styles.sectionSubText}>Tools I Use</p>
+        <h2 className={styles.sectionHeadText}>Technologies</h2>
         <div className="flex flex-col items-center mt-4">
           {technologies.map((technology) => (
             <div key={technology.name} className="flex items-center justify-between bg-gray-800 p-4 rounded-lg shadow-lg w-full max-w-md my-2">
