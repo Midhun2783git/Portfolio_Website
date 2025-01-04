@@ -95,9 +95,9 @@ const About = () => {
           applications.
           <br />
           <br />
-          With a keen eye for detail and a problem-solving mindset,
-          I aim to develop solutions that address real-world needs while pushing
-          the boundaries of innovation.
+          With careful attention to detail and a focus on solving problems,
+          I aim to create solutions that meet real-world needs while pushing the
+          limits of innovation.
           </p>
         </motion.p>
       </div>
