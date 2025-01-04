@@ -96,12 +96,13 @@ const Works = () => {
       </div>
 
       {/* Mobile Text Display */}
+      <div className='block md:hidden text-center'>
         <div className="flex flex-col items-center mt-4">
           {projects.map((project) => (
             <div key={project.name} className="flex items-center justify-between bg-gray-800 p-4 rounded-lg shadow-lg w-full max-w-md my-2">
               <div className="flex items-center space-x-2">
                 <img src={project.image} alt={project.name} className="w-10 h-10" />
-                <span className="text-white text-[20px] ">{project.name}</span>  
+                <span className="text-white text-[20px]">{project.name}</span>  
               </div>
               <a 
                 href={project.project_link} 
@@ -114,6 +115,7 @@ const Works = () => {
             </div>
           ))}
         </div>
+      </div>
     </>
   )
 }
