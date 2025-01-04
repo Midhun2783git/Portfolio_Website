@@ -5,7 +5,7 @@ import { styles } from '../../styles';
 import { services } from '../../constants';
 import { fadeIn, textVariant } from '../../utils/motion';
 import { SectionWrapper } from '../../hoc';
-import { brainwave } from '../../assets/assets';
+import { hello } from '../../assets/assets';
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
@@ -106,7 +106,7 @@ const About = () => {
       
       <div className='w-full md:w-1/2 h-full'>
         <img
-          src={brainwave} // Replace with your image variable or path
+          src={hello} // Replace with your image variable or path
           alt='About Me'
           className='block hidden md:flex w-full h-full object-cover rounded-lg border-[5px] border-solid border-white'
           style={{
