@@ -97,9 +97,7 @@ const About = () => {
           <br />
           With a keen eye for detail and a problem-solving mindset,
           I aim to develop solutions that address real-world needs while pushing
-          the boundaries of innovation. Driven by curiosity and a commitment to
-          continuous growth, I am eager to contribute to projects that shape the
-          future of technology and create a meaningful difference.
+          the boundaries of innovation.
           </p>
         </motion.p>
       </div>
