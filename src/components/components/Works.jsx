@@ -97,20 +97,20 @@ const Works = () => {
 
       {/* Mobile Text Display */}
       <div className='block md:hidden text-center'>
-        <p className={styles.sectionSubText}>Tools I Use.</p>
-        <h2 className={styles.sectionHeadText}>Technologies</h2>
+        <p className={styles.sectionSubText}>My Projects</p>
+        <h2 className={styles.sectionHeadText}>Projects</h2>
         <div className="flex flex-col items-center mt-4">
           {projects.map((project) => (
             <div key={project.name} className="flex items-center justify-between bg-gray-800 p-4 rounded-lg shadow-lg w-full max-w-md my-2">
               <div className="flex items-center space-x-2">
                 <img src={project.image} alt={project.name} className="w-10 h-10" />
-                <span className="text-white">{project.name}</span>  {/* Ensuring text color stands out */}
+                <span className="text-white text-[20px]">{project.name}</span>  
               </div>
               <a 
-                href={project.project_link} // Assuming project_link is the URL you want to redirect to
+                href={project.project_link} 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="bg-blue-500 text-white rounded px-4 py-2"  // Button styling
+                className="bg-blue-500 text-white rounded px-4 py-2"  
               >
                 View
               </a>
