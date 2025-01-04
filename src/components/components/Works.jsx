@@ -94,6 +94,20 @@ const Works = () => {
           />
         ))}
       </div>
+
+      {/* Mobile Text Display */}
+      <div className='block md:hidden text-center'>
+        <p className={styles.sectionSubText}>Tools i use. </p>
+        <h2 className={styles.sectionHeadText}>Technologies</h2>
+        <div className="flex flex-col items-center mt-4">
+          {projects.map((project) => (
+            <div key={project.name} className="flex items-center space-x-2 my-2">
+              <img src={project.image} alt={project.name} className="w-10 h-10" />
+              <span>{project.name}</span>
+            </div>
+          ))}
+        </div>
+      </div>
     </>
   )
 }
