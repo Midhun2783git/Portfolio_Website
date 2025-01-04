@@ -237,7 +237,7 @@ const projects = [
     ],
     image: brainwave,
     source_code_link: "https://github.com/Midhun2783git/brain-wave",
-    project_link: "",
+    project_link: "https://midhun-saminathan.vercel.app/",
 },
 {
     name: "Mastermind",
@@ -259,7 +259,7 @@ const projects = [
     ],
     image: rpi,
     source_code_link: "https://github.com/Midhun2783git/Mastermind_Game",
-    project_link: "",
+    project_link: "https://midhun-saminathan.vercel.app/",
 },
 {
     name: "Tic-Tac-Toe",
@@ -273,7 +273,7 @@ const projects = [
     ],
     image: tic,
     source_code_link: "https://github.com/Midhun2783git/Tic_Tac_Toe",
-    project_link: "",
+    project_link: "https://midhun-saminathan.vercel.app/",
 },
 {
     name: "Student Dorm",
@@ -309,7 +309,7 @@ const projects = [
     ],
     image: seaexp,
     source_code_link: "https://github.com/Midhun2783git/Sea_Exploration",
-    project_link: "",
+    project_link: "https://midhun-saminathan.vercel.app/",
 },
 {
     name: "Monster Game",
@@ -323,7 +323,7 @@ const projects = [
     ],
     image: mongm, 
     source_code_link: "https://github.com/Midhun2783git/Monster_game-",
-    project_link: "",
+    project_link: "https://midhun-saminathan.vercel.app/",
 },
 ];
 
