@@ -6,10 +6,15 @@ import { SectionWrapper } from "../../hoc"
 import { projects } from "../../constants"
 import { fadeIn, textVariant } from "../../utils/motion"
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
+const ProjectCard = ({ index, name, description, tags, image, source_code_link, project_link }) => {
+  const handleCardClick = () => {
+    window.open(project_link, "_blank")
+  };
   return (
     <motion.div 
     variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+    onClick={handleCardClick}
+    style = {{cursor: "pointer"}}
     >
       <Tilt 
         options={{ max: 45, scale: 1, speed: 450}}
@@ -24,7 +29,10 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
+              onClick={(e) => {
+                e.stopPropagation();
+                window.open(source_code_link, "_blank");
+              }}  
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
               <img
@@ -76,6 +84,12 @@ const Works = () => {
           <ProjectCard
             key={`project-${index}`}
             index={index}
+            name={project.name}
+            description={project.description}
+            tags={project.tags}
+            image={project.image}
+            source_code_link={project.source_code_link}
+            project_link={project.project_link}
             {...project}
           />
         ))}

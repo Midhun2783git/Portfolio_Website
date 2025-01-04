@@ -1,4 +1,4 @@
-import { h } from "maath/dist/misc-19a3ec46.esm";
+import { h, p } from "maath/dist/misc-19a3ec46.esm";
 import {
 mobile,
 backend,
@@ -237,6 +237,7 @@ const projects = [
     ],
     image: brainwave,
     source_code_link: "https://github.com/Midhun2783git/brain-wave",
+    project_link: "",
 },
 {
     name: "Mastermind",
@@ -258,6 +259,7 @@ const projects = [
     ],
     image: rpi,
     source_code_link: "https://github.com/Midhun2783git/Mastermind_Game",
+    project_link: "",
 },
 {
     name: "Tic-Tac-Toe",
@@ -271,6 +273,7 @@ const projects = [
     ],
     image: tic,
     source_code_link: "https://github.com/Midhun2783git/Tic_Tac_Toe",
+    project_link: "",
 },
 {
     name: "Student Dorm",
@@ -292,6 +295,7 @@ const projects = [
     ],
     image: studdorm,
     source_code_link: "https://github.com/Midhun2783git/Stud_Dorm_website",
+    project_link: "https://midhun2783git.github.io/Stud_Dorm_website/",
 },
 {
     name: "Underwater Exploration",
@@ -305,6 +309,7 @@ const projects = [
     ],
     image: seaexp,
     source_code_link: "https://github.com/Midhun2783git/Sea_Exploration",
+    project_link: "",
 },
 {
     name: "Monster Game",
@@ -318,6 +323,7 @@ const projects = [
     ],
     image: mongm, 
     source_code_link: "https://github.com/Midhun2783git/Monster_game-",
+    project_link: "",
 },
 ];
 
