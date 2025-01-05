@@ -72,7 +72,7 @@ const Works = () => {
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+          className="hidden md:flex mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           The following projects demonstrate my skills and experience through practical examples of my work.
           Each project includes a brief description along with links to code repositories and live demos.
@@ -96,6 +96,14 @@ const Works = () => {
       </div>
 
       {/* Mobile Text Display */}
+      <motion.p
+        variants={fadeIn("", "", 0.1, 1)}
+        className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+      >
+        The following projects demonstrate my skills and experience through practical examples of my work.
+        Each project includes code repositories and live demos.
+        They showcase my ability to tackle challenges, work across various technologies, and deliver impactful results efficiently.
+      </motion.p>
       <div className='block md:hidden text-center'>
         <div className="flex flex-col items-center mt-4">
           {projects.map((project) => (
