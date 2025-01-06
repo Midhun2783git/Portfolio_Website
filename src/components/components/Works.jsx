@@ -113,8 +113,8 @@ const Works = () => {
                 <span className="text-white text-[20px]">{project.name}</span>  
               </div>
               <a 
-                href={project.project_link} 
-                target="_blank" 
+                href={project.source_code_link} 
+                target={project.source_code_link} 
                 rel="noopener noreferrer" 
                 className="bg-blue-500 text-white rounded px-4 py-2"  
               >
