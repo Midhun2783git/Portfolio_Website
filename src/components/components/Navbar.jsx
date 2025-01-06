@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { styles } from '../../styles';
 import { navLinks } from '../../constants';
-import { logo, menu, close } from '../../assets/assets';
+import { logo, menu, close , insta , github, linkedin } from '../../assets/assets';
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -72,10 +72,33 @@ const Navbar = () => {
                     <a href={`#${Link.id}`}>{Link.title}</a>
                   </li>
                 ))}
+            <li className="flex gap-4">
+              <a href="https://link1.com" target="_blank" rel="noopener noreferrer">
+                <img src={insta} alt="Instagram" className="w-8 h-8" />
+              </a>
+              <a href="https://link2.com" target="_blank" rel="noopener noreferrer">
+                <img src={linkedin} alt="Linkedin" className="w-8 h-8" />
+              </a>
+              <a href="https://link3.com" target="_blank" rel="noopener noreferrer">
+                <img src={github} alt="Github" className="w-8 h-8" />
+              </a>
+            </li>
               </ul>
 
           </div>
         </div>
+      </div>
+
+      <div className="hidden sm:flex mr-5  ml-5 flex gap-4 bg-blue-500 rounded-lg shadow-md">
+        <a href="https://link1.com" target="_blank" rel="noopener noreferrer">
+          <img src={insta} alt="Instagram" className="w-8 h-8" />
+        </a>
+        <a href="https://link2.com" target="_blank" rel="noopener noreferrer">
+          <img src={linkedin} alt="Linkedin" className="w-8 h-8" />
+        </a>
+        <a href="https://link3.com" target="_blank" rel="noopener noreferrer">
+          <img src={github} alt="Github" className="w-8 h-8" />
+        </a>
       </div>
     </nav>
   )

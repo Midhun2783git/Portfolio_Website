@@ -9,6 +9,8 @@ import resume from "./resume.png";
 import CV from "./Midhun-Saminathan-CV.pdf";
 import close from "./close.svg";
 import hello from "./hello_prgm.jpeg";
+import insta from "./tech/insta.png";
+import linkedin from "./tech/linkedin.png";
 
 
 import python from "./tech/python.png";
@@ -52,6 +54,8 @@ export {
   mobile,
   web,
   github,
+  insta,
+  linkedin,
   menu,
   close,
   resume,
