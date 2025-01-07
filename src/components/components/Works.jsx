@@ -101,7 +101,7 @@ const Works = () => {
         className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
         The following projects demonstrate my skills and experience through practical examples of my work.
-        Each project includes code repositories and live demos.
+        Each project includes source-code repositories.
         They showcase my ability to tackle challenges, work across various technologies, and deliver impactful results efficiently.
       </motion.p>
       <div className='block md:hidden text-center'>
