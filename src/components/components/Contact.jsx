@@ -223,7 +223,7 @@ const Contact = () => {
 };
 
 const EarthContainer = styled.div`
-  @media (max-width: 768px) {
+  @media (max-width: 865px) {
     order: -1; /* Move the Earth scene above the form */
   }
 `;
