@@ -22,7 +22,7 @@ const Tech = () => {
       </div>
 
       {/* Mobile Text Display */}
-      <div className='block md:hidden text-center'>
+      <div className='block md:hidden'>
         <p className={styles.sectionSubText}>Tools I Use</p>
         <h2 className={styles.sectionHeadText}>Technologies</h2>
         <div className="flex flex-col items-center mt-4">
