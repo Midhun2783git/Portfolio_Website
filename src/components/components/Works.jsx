@@ -14,12 +14,18 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
     <motion.div 
     variants={fadeIn("up", "spring", index * 0.5, 0.75)}
     onClick={handleCardClick}
-    style = {{cursor: "pointer"}}
+    className="relative cursor-pointer group"
     >
       <Tilt 
         options={{ max: 45, scale: 1, speed: 450}}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
+        <div
+          className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-75"
+          style={{
+            pointerEvents: "none",
+          }}
+        ></div>
         <div className="relative w-full h-[230px]">
           <img
             src={image}
@@ -73,6 +79,10 @@ const Works = () => {
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className="hidden md:flex mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+          style={{
+            transition: "transform 0.3s ease",
+            cursor: "pointer",
+          }}
         >
           The following projects demonstrate my skills and experience through practical examples of my work.
           Each project includes a brief description along with links to code repositories and live demos.
@@ -91,7 +101,7 @@ const Works = () => {
             source_code_link={project.source_code_link}
             project_link={project.project_link}
             {...project}
-          />
+          />         
         ))}
       </div>
 
