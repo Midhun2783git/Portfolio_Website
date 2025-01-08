@@ -122,7 +122,7 @@ const Works = () => {
               style={{
                 position: "relative",
                 overflow: "hidden",
-                backgroundColor: "rgba(247, 43, 43, 0.5)", // Fallback background
+                backgroundColor: "rgba(247, 43, 43, 0.5)", 
                 animation: "glazeEffectReverse 3s linear infinite",
                 background:
                   "linear-gradient(90deg, rgba(249, 64, 43, 0.1) 0%, rgba(245, 85, 85, 0.3) 50%, rgba(249, 64, 43, 0.1) 100%)",

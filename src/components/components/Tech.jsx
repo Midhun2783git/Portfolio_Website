@@ -32,7 +32,7 @@ const Tech = () => {
             style={{
               position: "relative",
               overflow: "hidden",
-              backgroundColor: "rgba(21, 35, 198, 0.7)", // Fallback background
+              backgroundColor: "rgba(21, 35, 198, 0.7)", 
               animation: "glazeEffect 3s linear infinite",
               background:
                 "linear-gradient(90deg, rgba(29, 43, 235, 0.1) 0%, rgba(50, 140, 250, 0.3) 50%, rgba(29, 43, 235, 0.1) 100%)",
