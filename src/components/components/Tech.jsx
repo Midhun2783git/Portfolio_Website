@@ -27,7 +27,18 @@ const Tech = () => {
         <h2 className={styles.sectionHeadText}>Technologies</h2>
         <div className="flex flex-col items-center mt-4">
           {technologies.map((technology) => (
-            <div key={technology.name} className="flex items-center justify-between bg-gray-800 p-4 rounded-lg shadow-lg w-full max-w-md my-2">
+            <div
+            key={technology.name}
+            style={{
+              position: "relative",
+              overflow: "hidden",
+              backgroundColor: "rgba(0, 0, 0, 0.5)", // Fallback background
+              animation: "glazeEffect 3s linear infinite",
+              background:
+                "linear-gradient(90deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0.1) 100%)",
+              backgroundSize: "200% auto",
+            }}
+            className="flex items-center justify-between bg-gray-800 p-4 rounded-lg shadow-lg w-full max-w-md my-2">
               <div className="flex items-center space-x-2">
                 <img src={technology.icon} alt={technology.name} className="w-10 h-10" />
                 <span className="text-white text-[20px]">{technology.name}</span>  
@@ -35,6 +46,16 @@ const Tech = () => {
             </div>
           ))}
         </div>
+        <style jsx>{`
+          @keyframes glazeEffect {
+            0% {
+              background-position: 0% center;
+            }
+            100% {
+              background-position: 200% center;
+            }
+          }
+        `}</style>
       </div>
       </motion.div>      
     </>
