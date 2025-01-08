@@ -112,10 +112,10 @@ const Works = () => {
               style={{
                 position: "relative",
                 overflow: "hidden",
-                backgroundColor: "rgba(0, 0, 0, 0.5)", // Fallback background
-                animation: "glazeEffect 3s linear infinite",
+                backgroundColor: "rgba(247, 43, 43, 0.5)", // Fallback background
+                animation: "glazeEffectReverse 3s linear infinite",
                 background:
-                  "linear-gradient(90deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0.1) 100%)",
+                  "linear-gradient(90deg, rgba(249, 64, 43, 0.1) 0%, rgba(245, 85, 85, 0.3) 50%, rgba(249, 64, 43, 0.1) 100%)",
                 backgroundSize: "200% auto",
               }}              
               className="flex items-center justify-between bg-gray-800 p-4 rounded-lg shadow-lg w-full max-w-md my-2">
@@ -135,12 +135,12 @@ const Works = () => {
           ))}
         </div>
         <style jsx>{`
-          @keyframes glazeEffect {
+          @keyframes glazeEffectReverse {
             0% {
-              background-position: 0% center;
+              background-position: 200% center;
             }
             100% {
-              background-position: 200% center;
+              background-position: 0% center;
             }
           }
         `}</style>

@@ -32,10 +32,10 @@ const Tech = () => {
             style={{
               position: "relative",
               overflow: "hidden",
-              backgroundColor: "rgba(0, 0, 0, 0.5)", // Fallback background
+              backgroundColor: "rgba(21, 35, 198, 0.7)", // Fallback background
               animation: "glazeEffect 3s linear infinite",
               background:
-                "linear-gradient(90deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0.1) 100%)",
+                "linear-gradient(90deg, rgba(29, 43, 235, 0.1) 0%, rgba(50, 140, 250, 0.3) 50%, rgba(29, 43, 235, 0.1) 100%)",
               backgroundSize: "200% auto",
             }}
             className="flex items-center justify-between bg-gray-800 p-4 rounded-lg shadow-lg w-full max-w-md my-2">
