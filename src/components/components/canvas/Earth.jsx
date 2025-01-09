@@ -1,5 +1,5 @@
 import { Suspense, useEffect, useState } from "react";
-import { Canvas } from "@react-three/fiber";
+import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
@@ -22,11 +22,17 @@ const Earth = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  useFrame((state, delta) => {
+    if (earth.scene) {
+      earth.scene.rotation.y += delta * 0.5; // Adjust speed with the multiplier
+    }
+  });
+
   return (
     <primitive
       object={earth.scene}
       scale={scale}
-      position-y={0}
+      //position-y={0}
       rotation-y={0}
     />
   );
@@ -36,7 +42,7 @@ const EarthCanvas = () => {
   return (
     <Canvas
       shadows
-      frameloop="demand"
+      frameloop="always"
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
