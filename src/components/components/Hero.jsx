@@ -15,18 +15,16 @@ const Hero = () => {
     const handleTyping = () => {
       const currentWord = words[index];
       if (!isDeleting) {
-        // Typing logic
         setText((prev) => currentWord.substring(0, prev.length + 1));
         if (text === currentWord) {
           setIsDeleting(true);
-          setTypingSpeed(150); // Pause before deleting
+          setTypingSpeed(150); 
         }
       } else {
-        // Deleting logic
         setText((prev) => currentWord.substring(0, prev.length - 1));
         if (text === '') {
           setIsDeleting(false);
-          setIndex((prev) => (prev + 1) % words.length); // Move to the next word
+          setIndex((prev) => (prev + 1) % words.length); 
           setTypingSpeed(150);
         }
       }

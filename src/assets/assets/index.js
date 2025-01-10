@@ -6,7 +6,7 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import resume from "./resume.png";
-import CV from "./Midhun-Saminathan-CV.pdf";
+import CV from "./Midhun_Saminathan_Resume.pdf";
 import close from "./close.svg";
 import hello from "./hello_prgm.jpeg";
 import insta from "./tech/insta.png";

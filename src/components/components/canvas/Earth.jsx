@@ -24,7 +24,7 @@ const Earth = () => {
 
   useFrame((state, delta) => {
     if (earth.scene) {
-      earth.scene.rotation.y += delta * 0.5; // Adjust speed with the multiplier
+      earth.scene.rotation.y += delta * 0.5; 
     }
   });
 
@@ -32,7 +32,6 @@ const Earth = () => {
     <primitive
       object={earth.scene}
       scale={scale}
-      //position-y={0}
       rotation-y={0}
     />
   );
