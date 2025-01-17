@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
 
 const Hero = () => {
   const [text, setText] = useState('');
-  const words = ['Midhun', 'a Developer', 'a Tech Enthusiast'];
+  const words = ['Midhun', 'a Developer', 'a Tech Geek'];
   const [index, setIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [typingSpeed, setTypingSpeed] = useState(100);
