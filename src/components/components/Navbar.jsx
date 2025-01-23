@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 
 import { styles } from '../../styles';
 import { navLinks } from '../../constants';
-import { logo, menu, close , insta , github, linkedin } from '../../assets/assets';
+import { logo, menu, close , insta , github, linkedin, Instagram, LinkedIn, Github } from '../../assets/assets';
+import { s } from 'maath/dist/misc-19a3ec46.esm';
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -89,19 +90,50 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="hidden sm:flex mr-5  ml-5 flex gap-4 bg-black-500 rounded-lg shadow-md">
+      <div className="hidden sm:flex mr-5  ml-5 flex gap-4 bg-black rounded-lg shadow-md">
         <a href="https://www.instagram.com/midhun.s_27/" target="_blank" rel="noopener noreferrer">
+          <img 
+            src={Instagram} 
+            alt="Instagram" 
+            className="w-8 h-8 transition duration-500" 
+            onMouseEnter={(e) => e.currentTarget.src = insta}  
+            onMouseLeave={(e) => e.currentTarget.src = Instagram}  
+          />
+        </a>
+        {/* <a href="https://www.instagram.com/midhun.s_27/" target="_blank" rel="noopener noreferrer">
           <img src={insta} alt="Instagram" className="w-8 h-8" />
+        </a> */}
+        <a href="https://www.instagram.com/midhun.s_27/" target="_blank" rel="noopener noreferrer">
+          <img 
+            src={LinkedIn} 
+            alt="Instagram" 
+            className="w-8 h-8 transition duration-500" 
+            onMouseEnter={(e) => e.currentTarget.src = linkedin}  
+            onMouseLeave={(e) => e.currentTarget.src = LinkedIn}  
+          />
         </a>
-        <a href="https://www.linkedin.com/in/midhun-saminathan/" target="_blank" rel="noopener noreferrer">
+        {/* <a href="https://www.linkedin.com/in/midhun-saminathan/" target="_blank" rel="noopener noreferrer">
           <img src={linkedin} alt="Linkedin" className="w-8 h-8" />
+        </a> */}
+        <a href="https://www.instagram.com/midhun.s_27/" target="_blank" rel="noopener noreferrer">
+          <img 
+            src={github} 
+            alt="Instagram" 
+            className="w-8 h-8 transition duration-500" 
+            onMouseEnter={(e) => e.currentTarget.src = Github}  
+            onMouseLeave={(e) => e.currentTarget.src = github}  
+          />
         </a>
-        <a href="https://github.com/Midhun2783git" target="_blank" rel="noopener noreferrer">
+        {/* <a href="https://github.com/Midhun2783git" target="_blank" rel="noopener noreferrer">
           <img src={github} alt="Github" className="w-8 h-8" />
-        </a>
+        </a> */}
       </div>
     </nav>
   )
 }
 
 export default Navbar
+
+
+
+

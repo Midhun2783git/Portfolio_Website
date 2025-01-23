@@ -12,6 +12,9 @@ import hello from "./hello_prgm.jpeg";
 import insta from "./tech/insta.png";
 import linkedin from "./tech/linkedin.png";
 import hero from "../assets/herobg.png";
+import Github from "./github-color.png";
+import LinkedIn from "./linkedin_white.png";
+import Instagram from "./instagram_white.png";
 
 
 import python from "./tech/python.png";
@@ -58,6 +61,9 @@ export {
   github,
   insta,
   linkedin,
+  Github,
+  LinkedIn,
+  Instagram,
   menu,
   close,
   resume,
