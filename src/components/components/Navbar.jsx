@@ -73,10 +73,8 @@ const Navbar = () => {
                     <a href={`#${Link.id}`}>{Link.title}</a>
                   </li>
                 ))}
+            {/* Desktop Display     */}
             <li className="flex gap-4">
-              {/* <a href="https://www.instagram.com/midhun.s_27/" target="_blank" rel="noopener noreferrer">
-                <img src={insta} alt="Instagram" className="w-8 h-8" />
-              </a> */}
               <a href="https://www.instagram.com/midhun.s_27/" target="_blank" rel="noopener noreferrer">
                 <img 
                   src={Instagram} 
@@ -86,9 +84,6 @@ const Navbar = () => {
                   onMouseLeave={(e) => e.currentTarget.src = Instagram}  
                 />
               </a>
-              {/* <a href="https://www.linkedin.com/in/midhun-saminathan/" target="_blank" rel="noopener noreferrer">
-                <img src={linkedin} alt="Linkedin" className="w-8 h-8" />
-              </a> */}
               <a href="https://www.linkedin.com/in/midhun-saminathan/" target="_blank" rel="noopener noreferrer">
                 <img 
                   src={LinkedIn} 
@@ -98,9 +93,6 @@ const Navbar = () => {
                   onMouseLeave={(e) => e.currentTarget.src = LinkedIn}  
                 />
               </a>
-              {/* <a href="https://github.com/Midhun2783git" target="_blank" rel="noopener noreferrer">
-                <img src={github} alt="Github" className="w-8 h-8" />
-              </a> */}
               <a href="https://github.com/Midhun2783git" target="_blank" rel="noopener noreferrer">
                 <img 
                   src={github} 
@@ -117,6 +109,7 @@ const Navbar = () => {
         </div>
       </div>
 
+      {/* Mobile Display */}
       <div className="hidden sm:flex mr-5  ml-5 flex gap-4 bg-black rounded-lg shadow-md">
         <a href="https://www.instagram.com/midhun.s_27/" target="_blank" rel="noopener noreferrer">
           <img 
@@ -127,9 +120,6 @@ const Navbar = () => {
             onMouseLeave={(e) => e.currentTarget.src = Instagram}  
           />
         </a>
-        {/* <a href="https://www.instagram.com/midhun.s_27/" target="_blank" rel="noopener noreferrer">
-          <img src={insta} alt="Instagram" className="w-8 h-8" />
-        </a> */}
         <a href="https://www.linkedin.com/in/midhun-saminathan/" target="_blank" rel="noopener noreferrer">
           <img 
             src={LinkedIn} 
@@ -139,9 +129,6 @@ const Navbar = () => {
             onMouseLeave={(e) => e.currentTarget.src = LinkedIn}  
           />
         </a>
-        {/* <a href="https://www.linkedin.com/in/midhun-saminathan/" target="_blank" rel="noopener noreferrer">
-          <img src={linkedin} alt="Linkedin" className="w-8 h-8" />
-        </a> */}
         <a href="https://github.com/Midhun2783git" target="_blank" rel="noopener noreferrer">
           <img 
             src={github} 
@@ -151,9 +138,6 @@ const Navbar = () => {
             onMouseLeave={(e) => e.currentTarget.src = github}  
           />
         </a>
-        {/* <a href="https://github.com/Midhun2783git" target="_blank" rel="noopener noreferrer">
-          <img src={github} alt="Github" className="w-8 h-8" />
-        </a> */}
       </div>
     </nav>
   )
