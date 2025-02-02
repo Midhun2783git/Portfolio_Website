@@ -57,6 +57,7 @@ const Tech = () => {
           }
         `}</style>
       </div>
+      
       </motion.div>      
     </>
   )
